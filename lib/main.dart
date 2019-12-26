@@ -10,7 +10,23 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: SafeArea(
           child: Center(
-            child: Text('Welcome Back'),
+            child: Column(
+              children: <Widget>[
+                SizedBox(height:50.0),
+                Text(
+                  'Welcome',
+                  style: TextStyle(
+                    fontSize: 30.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text('Back', 
+                style: TextStyle(
+                  fontSize:30.0,
+                  fontWeight: FontWeight.bold,
+                ))
+              ],
+            ),
           ),
         ),
       ),
